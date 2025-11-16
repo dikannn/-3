@@ -1,0 +1,5 @@
+aiogram==3.*
+flyerapi
+python-dotenv
+asyncpg
+aiohttp
