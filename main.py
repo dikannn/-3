@@ -4,6 +4,7 @@ import os
 
 from aiogram import Bot, Dispatcher, Router, F
 from aiogram.enums import ParseMode
+from aiogram.client.default import DefaultBotProperties
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, CallbackQuery
 
