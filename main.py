@@ -35,7 +35,9 @@ if not DATABASE_URL:
     raise RuntimeError("❌ Missing DATABASE_URL")
 
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token=BOT_TOKEN, parse_mode=ParseMode.HTML)
+bot = Bot(
+    token=BOT_TOKEN,
+    default=DefaultBotProperties(parse_mode=ParseMode.HTML),)
 dp = Dispatcher()
 router = Router()
 dp.include_router(router)
